@@ -27,7 +27,6 @@ class PermissionActivity : AppCompatActivity() {
         permissionBinding = ActivityPermissionBinding.inflate(layoutInflater)
         setContentView(permissionBinding.root)
         receiver= BroadCastReceivers()
-
     }
 
     override fun onResume() {
