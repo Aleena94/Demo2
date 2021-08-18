@@ -27,9 +27,6 @@ class PermissionActivity : AppCompatActivity() {
         permissionBinding = ActivityPermissionBinding.inflate(layoutInflater)
         setContentView(permissionBinding.root)
         receiver= BroadCastReceivers()
-        IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED).also {
-            registerReceiver(receiver,it)
-        }
     }
 
     override fun onResume() {
